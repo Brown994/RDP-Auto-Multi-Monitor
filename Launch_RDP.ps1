@@ -44,7 +44,7 @@ $Monitors = [System.Windows.Forms.Screen]::AllScreens | ForEach-Object -Begin { 
 }
 
 # Sort the monitors
-$Monitors = $Monitors | Sort-Object RDPID #| Where-Object { $_.X -ne '-1920' }
+$Monitors = $Monitors | Sort-Object RDPID
 
 # Apply filter depending on the parameter set
 switch ($PSCmdlet.ParameterSetName) {
